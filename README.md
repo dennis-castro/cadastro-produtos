@@ -26,26 +26,4 @@
 - Não é possivel criar um produto com o mesmo nome;
 - O nome deve ter entre 3 a 30 caracteres;
 
-# Warehouse-ms
 
-## Endpoints
-- BaseURL: /warehouses
-- POST: create()
-- GET: getAll()
-- GET /{id}: *
-- PUT /{id}: *
-- DELETE /{id}: delete() *
-
-## Model
-```json
-{
-    "id": 1,
-    "product-id": 1,
-    "quantity": 10
-}
-```
-
-
-## Businees Rules
-- O estoque é reponsável por avisar se o produto  estáo ou não disponivel.
-- Não é permitido mais de uma linha do mesmo produto salvo na base de dados

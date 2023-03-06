@@ -20,7 +20,7 @@
 ```
 
 ## Businees Rules
-- Só é possível a criação de produtos com preço POSITIVO;
+- Só é possível a criação de produtos com o preço POSITIVO;
 - Não é possível pesquisar produtos que não estão disponíveis;
 - Não é possível inserir descrições com menos de 10 caracteres;
 - Não é possivel criar um produto com o mesmo nome;

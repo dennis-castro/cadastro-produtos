@@ -2,13 +2,9 @@ package br.com.curso.productms.dto.response;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Positive;
-import javax.validation.constraints.Size;
-
 
 @Data
-public class   ProductDTOResponse {
+public class ProductDtoResponse {
 
     private Long id;
 

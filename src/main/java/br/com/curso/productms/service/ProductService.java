@@ -1,21 +1,21 @@
 package br.com.curso.productms.service;
 
-import br.com.curso.productms.dto.request.ProductDto;
-import br.com.curso.productms.dto.response.ProductDTOResponse;
+import br.com.curso.productms.dto.request.ProductDtoRequest;
+import br.com.curso.productms.dto.response.ProductDtoResponse;
+import br.com.curso.productms.model.Product;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ProductService {
 
-    ProductDTOResponse create(ProductDto request);
+    Optional<ProductDtoResponse> create(ProductDtoRequest request);
 
-    ProductDTOResponse update(ProductDto request,Long id);
+    Optional<ProductDtoResponse> update(ProductDtoRequest request, Long id);
 
+    List<ProductDtoResponse> getAll();
 
-    List<ProductDTOResponse> getAll();
+    Optional<ProductDtoResponse> getById(Long id);
 
-    ProductDTOResponse getById(Long id);
-
-    void delete (Long id);
-
+    boolean delete (Long id);
 }
